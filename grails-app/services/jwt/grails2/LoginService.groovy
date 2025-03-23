@@ -9,6 +9,6 @@ class LoginService {
             return JWTManager.generateToken(username)
         }
 
-        throw new AuthenticationException()
+        throw new AuthenticationException('Credenciais inválidas')
     }
 }
