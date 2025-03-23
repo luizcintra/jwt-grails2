@@ -50,8 +50,6 @@ grails.project.dependency.resolution = {
     dependencies {
         compile 'org.apache.httpcomponents:httpclient:4.2.5'
         compile "com.auth0:java-jwt:3.1.0"
-
-        test "org.grails:grails-datastore-test-support:1.0-grails-2.3"
     }
 
     plugins {
