@@ -1,9 +1,7 @@
 package jwt.grails2
 
-import grails.transaction.Transactional
 import org.apache.http.auth.AuthenticationException
 
-@Transactional
 class LoginService {
 
     String authenticate(String username, String password) {

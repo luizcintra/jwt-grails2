@@ -7,7 +7,7 @@ import com.auth0.jwt.algorithms.Algorithm
 
 class JWTManager {
 
-    private static final String DEFAULT_SECRET = '01a5bb67-7e96-4ef7-974a-03735004f3cb'
+    static final String DEFAULT_SECRET = '01a5bb67-7e96-4ef7-974a-03735004f3cb'
     private static final String USERNAME_FIELD = 'user'
     private static final Long MINUTE = 60_000L //Milliseconds
     private static final Long THIRTY_SECONDS = 30_000L
