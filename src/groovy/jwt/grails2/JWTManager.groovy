@@ -15,7 +15,7 @@ class JWTManager {
     private static final Long MINUTE = 60_000L //Milliseconds
     private static final Long THIRTY_SECONDS = 30_000L
     private static final Long EXPIRATION_TIME = 30 * MINUTE
-    private static final Algorithm ALGORITHM = Algorithm.HMAC512(DEFAULT_SECRET)
+    private static final Algorithm ALGORITHM = Algorithm.HMAC256(DEFAULT_SECRET)
     private static final JWTVerifier VERIFIER = JWT.require(ALGORITHM)
             .acceptLeeway(THIRTY_SECONDS)
             .build()
